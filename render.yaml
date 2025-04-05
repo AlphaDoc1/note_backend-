@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: notes-backend
+    env: java
+    plan: free
+    buildCommand: mvn clean install
+    startCommand: java -jar target/notes-management-system-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://admin:admin123@cluster0.fgdyxqh.mongodb.net/notesdb?retryWrites=true&w=majority&appName=Cluster0
+      - key: AWS_BUCKET
+        value: studentnotes-bucket
+      - key: AWS_ACCESS_KEY
+        value: YOUR_AWS_ACCESS_KEY
+      - key: AWS_SECRET_KEY
+        value: YOUR_AWS_SECRET_KEY
