@@ -1,7 +1,7 @@
-services:
-  - type: web
-    name: notes-backend
-    env: java
-    plan: free
-    buildCommand: mvn clean install
-    startCommand: java -jar target/notes-management-system-0.0.1-SNAPSHOT.jar
+ services:
+     - type: web
+       name: notes-backend
+       env: java
+       plan: free
+       buildCommand: mvn clean install
+       startCommand: java -jar target/notes-management-system-0.0.1-SNAPSHOT.jar
