@@ -1,0 +1,7 @@
+{
+  "build": {
+    "builder": "maven",
+    "buildCommand": "mvn clean install",
+    "startCommand": "java -jar target/notes-management-system-0.0.1-SNAPSHOT.jar"
+  }
+}
